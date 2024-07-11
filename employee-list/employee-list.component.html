@@ -1,0 +1,12 @@
+<p>employee-list works!</p>
+<table>
+    <tr *ngFor="let employee of employees">
+      <td>{{ employee.name }}</td>
+      <td>{{ employee.salary }}</td>
+      <td>{{ employee.age }}</td>
+      <td>
+        <button (click)="onEditEmployee(employee)">Edit</button>
+        <button (click)="deleteEmployee(employee.id)">Delete</button>
+      </td>
+    </tr>
+  </table>
